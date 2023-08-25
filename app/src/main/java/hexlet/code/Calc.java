@@ -24,7 +24,7 @@ public class Calc {
                 System.out.println("Correct!");
                 bResult = true;
             } else {
-                System.out.println("Wrong!");
+                System.out.println("'" + iAnswer + "'" + " is wrong answer ;(. Correct answer was '" + Eval.eval(iNumber,sSigns[iRandomIndex],iNumber1) + "'");
             }
         }
         return bResult;

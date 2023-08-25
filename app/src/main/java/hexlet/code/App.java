@@ -24,6 +24,7 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 GDC");
         System.out.println("0 - Exit");
         var con = System.console();
         if (con != null) {
@@ -56,6 +57,20 @@ public class App {
                     }
                     if (bResult) {
                         System.out.println("Congratulations, " + sUserName + "!");
+                    }
+                }
+                case 4 -> {
+                    greet();
+                    System.out.println("Welcome to the Brain Games!");
+                    System.out.println("Find the greatest common divisor of given numbers.");
+                    boolean bResult = true;
+                    for (var i = 0; i<3; i++){
+                        bResult = Nod.nod() && bResult;
+                    }
+                    if (bResult) {
+                        System.out.println("Congratulations, " + sUserName + "!");
+                    } else {
+                        System.out.println("Let's try again, "+App.sUserName+ "!");
                     }
                 }
                 default -> {
