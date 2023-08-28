@@ -26,6 +26,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - GDC");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         var con = System.console();
         if (con != null) {
@@ -86,6 +87,20 @@ public class App {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
                         System.out.println("Let's try again, "+App.sUserName+ "!");
+                    }
+                }
+                case 6 -> {
+                    greet();
+                    System.out.println("Your choice: 6");
+                    System.out.println();
+                    System.out.println("Welcome to the Brain Games!");
+                    System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+                    boolean bResult = true;
+                    for (var i = 0; i<1; i++){
+                        bResult = Prime.prime() && bResult;
+                    }
+                    if (bResult) {
+                        System.out.println("Congratulations, " + sUserName + "!");
                     }
                 }
                 default -> {
