@@ -96,7 +96,7 @@ public class App {
                     System.out.println("Welcome to the Brain Games!");
                     System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
                     boolean bResult = true;
-                    for (var i = 0; i<1; i++){
+                    for (var i = 0; i<3; i++){
                         bResult = Prime.prime() && bResult;
                     }
                     if (bResult) {
