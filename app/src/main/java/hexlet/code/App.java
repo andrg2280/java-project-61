@@ -42,7 +42,7 @@ public class App {
                     System.out.println("Welcome to the Brain Games!");
                     System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
                     boolean bResult = true;
-                    for (var i = 0; i<3; i++){
+                    for (var i = 0; i < 3; i++) {
                         bResult = Even.even() && bResult;
                     }
                     if (bResult) {
@@ -54,7 +54,7 @@ public class App {
                     System.out.println("Welcome to the Brain Games!");
                     System.out.println("What is the result of the expression?");
                     boolean bResult = true;
-                    for (var i = 0; i<3; i++){
+                    for (var i = 0; i < 3; i++) {
                         bResult = Calc.calc() && bResult;
                     }
                     if (bResult) {
@@ -66,13 +66,13 @@ public class App {
                     System.out.println("Welcome to the Brain Games!");
                     System.out.println("Find the greatest common divisor of given numbers.");
                     boolean bResult = true;
-                    for (var i = 0; i<3; i++){
+                    for (var i = 0; i < 3; i++) {
                         bResult = Nod.nod() && bResult;
                     }
                     if (bResult) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
-                        System.out.println("Let's try again, "+App.sUserName+ "!");
+                        System.out.println("Let's try again, " + App.sUserName + "!");
                     }
                 }
                 case 5 -> {
@@ -80,13 +80,13 @@ public class App {
                     System.out.println("Welcome to the Brain Games!");
                     System.out.println("What number is missing in the progression?");
                     boolean bResult = true;
-                    for (var i = 0; i<3; i++){
+                    for (var i = 0; i < 3; i++) {
                         bResult = Prog.prog() && bResult;
                     }
                     if (bResult) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
-                        System.out.println("Let's try again, "+App.sUserName+ "!");
+                        System.out.println("Let's try again, " + App.sUserName + "!");
                     }
                 }
                 case 6 -> {
@@ -96,7 +96,7 @@ public class App {
                     System.out.println("Welcome to the Brain Games!");
                     System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
                     boolean bResult = true;
-                    for (var i = 0; i<3; i++){
+                    for (var i = 0; i < 3; i++) {
                         bResult = Prime.prime() && bResult;
                     }
                     if (bResult) {

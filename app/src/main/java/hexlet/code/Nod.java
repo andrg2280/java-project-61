@@ -11,27 +11,24 @@ public class Nod {
         boolean bResult = false;
         System.out.println("Question: " + iNumber + " " + iNumber1);
         System.out.println("Your answer: ");
-        var conEven = System.console();
-        if (conEven != null) {
-            Scanner sc = new Scanner(conEven.reader());
-            int iInput = 0;
-            iInput = sc.nextInt();
-            if (iInput == gcdBF(iNumber,iNumber1)) {
-                System.out.println("Correct!");
-                bResult = true;
-            } else {
-                System.out.println("'" + iInput + "'" + " is wrong answer ;(. Correct answer was '" + gcdBF(iNumber,iNumber1) + "'");
-            }
+        Scanner scanner = new Scanner(System.in);
+        int iInput = scanner.nextInt();
+        int iCorrectAnswer = gcdBF(iNumber, iNumber1);
+        if (iInput == iCorrectAnswer) {
+            System.out.println("Correct!");
+            bResult = true;
+        } else {
+            System.out.println("'" + iInput + "'" + " is wrong answer ;(. Correct answer was '" + iCorrectAnswer + "'");
         }
         return bResult;
-        };
-        static int gcdBF(int n1, int n2) {
-            int gcd = 1;
-            for (int i = 1; i <= n1 && i <= n2; i++) {
-                if (n1 % i == 0 && n2 % i == 0) {
-                    gcd = i;
-                }
+    }
+    static int gcdBF(int n1, int n2) {
+        int gcd = 1;
+        for (int i = 1; i <= n1 && i <= n2; i++) {
+            if (n1 % i == 0 && n2 % i == 0) {
+                gcd = i;
             }
-            return gcd;
+        }
+        return gcd;
     }
 }

@@ -11,8 +11,8 @@ public class Prog {
         int iNumberVoid = 0;
         String sProgress = "";
         for (int i = 1; i < 11; i++) {
-            if (iNumber1 == (i-1)) {
-                sProgress = sProgress + " .. " ;
+            if (iNumber1 == (i - 1)) {
+                sProgress = sProgress + " .. ";
                 iNumberVoid = (i * iNumber);
             } else {
                 sProgress = sProgress + " " + (i * iNumber);
@@ -21,17 +21,13 @@ public class Prog {
         boolean bResult = false;
         System.out.println("Question: " + sProgress);
         System.out.println("Your answer: ");
-        var conEven = System.console();
-        if (conEven != null) {
-            Scanner sc = new Scanner(conEven.reader());
-            int iInput = 0;
-            iInput = sc.nextInt();
-            if (iInput == iNumberVoid) {
-                System.out.println("Correct!");
-                bResult = true;
-            } else {
-                System.out.println("'" + iInput + "'" + " is wrong answer ;(. Correct answer was '" + iNumberVoid + "'");
-            }
+        Scanner scanner = new Scanner(System.in);
+        int iInput = scanner.nextInt();
+        if (iInput == iNumberVoid) {
+            System.out.println("Correct!");
+            bResult = true;
+        } else {
+            System.out.println("'" + iInput + "'" + " is wrong answer ;(. Correct answer was '" + iNumberVoid + "'");
         }
         return bResult;
     };

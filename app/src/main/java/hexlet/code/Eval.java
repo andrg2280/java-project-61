@@ -16,6 +16,8 @@ public class Eval {
             case "+":
                 r += a + b;
                 break;
+            default :
+                break;
         }
 
         return r;

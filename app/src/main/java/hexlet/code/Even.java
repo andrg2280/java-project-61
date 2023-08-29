@@ -9,17 +9,14 @@ public class Even {
         boolean bResult = false;
         System.out.println("Question: " + iNumber);
         System.out.println("Your answer: ");
-        var conEven = System.console();
-        if (conEven != null) {
-            Scanner sc = new Scanner(conEven.reader());
-            String s = "";
-            s = sc.nextLine();
-            if ((((iNumber%2 == 0)&&(s.equals("yes"))) || (!(iNumber%2 == 0)&&s.equals("no")))) {
-                System.out.println("Correct!");
-                bResult = true;
-            } else {
-                System.out.println("Wrong!");
-            }
+        Scanner scanner = new Scanner(System.in);
+        String selectedGame = scanner.next();
+        if ((((iNumber % 2 == 0) && (selectedGame.equals("yes")))
+                || (!(iNumber % 2 == 0) && selectedGame.equals("no")))) {
+            System.out.println("Correct!");
+            bResult = true;
+        } else {
+            System.out.println("Wrong!");
         }
         return bResult;
     };
