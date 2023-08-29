@@ -12,10 +12,10 @@ public class Prog {
         String sProgress = "";
         for (int i = 1; i < 11; i++) {
             if (iNumber1 == (i - 1)) {
-                sProgress = sProgress + " .. ";
+                sProgress = sProgress.trim() + " .. ";
                 iNumberVoid = (i * iNumber);
             } else {
-                sProgress = sProgress + " " + (i * iNumber);
+                sProgress = sProgress + (i * iNumber) + " ";
             }
         }
         boolean bResult = false;
