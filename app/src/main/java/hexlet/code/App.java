@@ -43,6 +43,7 @@ public class App {
                     if (Even.even()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
+                        System.out.println("Let's try again, " + sUserName + "!");
                         System.exit(0);
                     }
                 }
@@ -54,6 +55,7 @@ public class App {
                     if (Calc.calc()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
+                        System.out.println("Let's try again, " + sUserName + "!");
                         System.exit(0);
                     }
                 }
@@ -64,6 +66,7 @@ public class App {
                     if (Nod.nod()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
+                        System.out.println("Let's try again, " + sUserName + "!");
                         System.exit(0);
                     }
                 }
@@ -75,6 +78,7 @@ public class App {
                     if (Prog.prog()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
+                        System.out.println("Let's try again, " + sUserName + "!");
                         System.exit(0);
                     }
                 }
@@ -88,6 +92,7 @@ public class App {
                     if (Prime.prime()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
+                        System.out.println("Let's try again, " + sUserName + "!");
                         System.exit(0);
                     }
                 }
