@@ -4,11 +4,8 @@ import java.util.Scanner;
 public class App {
     static String sUserName = "";
     public static String getUserName() {
-        var conGreet = System.console();
-        if (conGreet != null) {
-            Scanner sc = new Scanner(conGreet.reader());
-            sUserName = sc.nextLine();
-        }
+        Scanner scanner = new Scanner(System.in);
+        sUserName = scanner.next();
         return sUserName;
     }
     public static void main(String[] args) {
