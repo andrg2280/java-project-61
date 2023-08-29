@@ -34,7 +34,10 @@ public class App {
             int iInput = Integer.parseInt(selectedGame);
             switch (iInput) {
                 case 0 -> System.exit(0);
-                case 1 -> greet();
+                case 1 -> {
+                    greet();
+                    System.exit(0);
+                }
                 case 2 -> {
                     greet();
                     System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
