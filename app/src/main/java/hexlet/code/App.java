@@ -62,7 +62,7 @@ public class App {
             }
             case 4 -> {
                 greet();
-                System.out.println("Find the greatest common divisor of given numbers");
+                System.out.println("Find the greatest common divisor of given numbers.");
                 for (int i = 0; i < 3; i++) {
                     if (Nod.nod()) {
                         System.out.println("Congratulations, " + sUserName + "!");
