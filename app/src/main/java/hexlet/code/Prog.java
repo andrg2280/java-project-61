@@ -19,7 +19,7 @@ public class Prog {
             }
         }
         boolean bResult = false;
-        System.out.println("Question: " + sProgress);
+        System.out.println("Question: " + sProgress.trim());
         System.out.println("Your answer: ");
         Scanner scanner = new Scanner(System.in);
         String sAnswer = scanner.next();
