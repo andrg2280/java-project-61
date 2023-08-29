@@ -2,7 +2,15 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class App {
-    static String sUserName = "";
+    private static String sUserName = "";
+    public static final int MAX_PROMPT_NUMBER = 3;
+    public static final int GAME0 = 0;
+    public static final int GAME1 = 1;
+    public static final int GAME2 = 2;
+    public static final int GAME3 = 3;
+    public static final int GAME4 = 4;
+    public static final int GAME5 = 5;
+    public static final int GAME6 = 6;
     public static String getUserName() {
         if (sUserName.isEmpty()) {
             Scanner scanner = new Scanner(System.in);
@@ -31,15 +39,15 @@ public class App {
         String selectedGame = scanner.next();
         int iInput = Integer.parseInt(selectedGame);
         switch (iInput) {
-            case 0 -> System.exit(0);
-            case 1 -> {
+            case GAME0 -> System.exit(0);
+            case GAME1 -> {
                 greet();
                 System.exit(0);
             }
-            case 2 -> {
+            case GAME2 -> {
                 greet();
                 System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < MAX_PROMPT_NUMBER; i++) {
                     if (Even.even()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
@@ -48,10 +56,10 @@ public class App {
                     }
                 }
             }
-            case 3 -> {
+            case GAME3 -> {
                 greet();
                 System.out.println("What is the result of the expression?");
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < MAX_PROMPT_NUMBER; i++) {
                     if (Calc.calc()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
@@ -60,10 +68,10 @@ public class App {
                     }
                 }
             }
-            case 4 -> {
+            case GAME4 -> {
                 greet();
                 System.out.println("Find the greatest common divisor of given numbers.");
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < MAX_PROMPT_NUMBER; i++) {
                     if (Nod.nod()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
@@ -72,10 +80,10 @@ public class App {
                     }
                 }
             }
-            case 5 -> {
+            case GAME5 -> {
                 greet();
                 System.out.println("What number is missing in the progression?");
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < MAX_PROMPT_NUMBER; i++) {
                     if (Prog.prog()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {
@@ -84,12 +92,12 @@ public class App {
                     }
                 }
             }
-            case 6 -> {
+            case GAME6 -> {
                 greet();
                 System.out.println("Your choice: 6");
                 System.out.println();
                 System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < MAX_PROMPT_NUMBER; i++) {
                     if (Prime.prime()) {
                         System.out.println("Congratulations, " + sUserName + "!");
                     } else {

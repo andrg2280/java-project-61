@@ -3,9 +3,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Even {
+    public static final int MAX_RANDOM_NUMBER = 100;
     public static boolean even() {
         Random random = new Random();
-        int  iNumber = random.nextInt(100);
+        int  iNumber = random.nextInt(MAX_RANDOM_NUMBER);
         boolean bResult = false;
         System.out.println("Question: " + iNumber);
         System.out.println("Your answer: ");

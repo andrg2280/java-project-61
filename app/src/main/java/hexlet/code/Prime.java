@@ -5,9 +5,10 @@ import java.util.Scanner;
 import static java.lang.Math.sqrt;
 
 public class Prime {
+    public static final int MAX_RANDOM_NUMBER = 100;
     public static boolean prime() {
         Random random = new Random();
-        int  iNumber = random.nextInt(100);
+        int  iNumber = random.nextInt(MAX_RANDOM_NUMBER);
         boolean bResult = false;
         System.out.println("Question: " + iNumber);
         System.out.println("Your answer: ");

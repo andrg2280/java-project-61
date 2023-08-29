@@ -4,10 +4,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Nod {
+    public static final int MAX_RANDOM_NUMBER = 100;
     public static boolean nod() {
         Random random = new Random();
-        int  iNumber = random.nextInt(100);
-        int  iNumber1 = random.nextInt(100);
+        int  iNumber = random.nextInt(MAX_RANDOM_NUMBER);
+        int  iNumber1 = random.nextInt(MAX_RANDOM_NUMBER);
         boolean bResult = false;
         System.out.println("Question: " + iNumber + " " + iNumber1);
         System.out.println("Your answer: ");
