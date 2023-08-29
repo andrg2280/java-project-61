@@ -13,7 +13,7 @@ public class Nod {
         System.out.println("Your answer: ");
         Scanner scanner = new Scanner(System.in);
         String sAnswer = scanner.next();
-        int iInput = Integer.parseInt (sAnswer);
+        int iInput = Integer.parseInt(sAnswer);
         int iCorrectAnswer = gcdBF(iNumber, iNumber1);
         if (iInput == iCorrectAnswer) {
             System.out.println("Correct!");

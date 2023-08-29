@@ -16,7 +16,7 @@ public class Calc {
         System.out.println("Your answer: ");
         Scanner scanner = new Scanner(System.in);
         String sAnswer = scanner.next();
-        int iAnswer = Integer.parseInt (sAnswer);
+        int iAnswer = Integer.parseInt(sAnswer);
         int iCorrectAnswer = Eval.eval(iNumber, sSigns[iRandomIndex], iNumber1);
 
         if (iAnswer == iCorrectAnswer) {

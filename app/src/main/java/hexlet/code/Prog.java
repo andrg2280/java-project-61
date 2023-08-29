@@ -23,7 +23,7 @@ public class Prog {
         System.out.println("Your answer: ");
         Scanner scanner = new Scanner(System.in);
         String sAnswer = scanner.next();
-        int iInput = Integer.parseInt (sAnswer);
+        int iInput = Integer.parseInt(sAnswer);
         if (iInput == iNumberVoid) {
             System.out.println("Correct!");
             bResult = true;
