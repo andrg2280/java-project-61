@@ -12,7 +12,8 @@ public class Nod {
         System.out.println("Question: " + iNumber + " " + iNumber1);
         System.out.println("Your answer: ");
         Scanner scanner = new Scanner(System.in);
-        int iInput = scanner.nextInt();
+        String sAnswer = scanner.next();
+        int iInput = Integer.parseInt (sAnswer);
         int iCorrectAnswer = gcdBF(iNumber, iNumber1);
         if (iInput == iCorrectAnswer) {
             System.out.println("Correct!");

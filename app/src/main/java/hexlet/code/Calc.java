@@ -15,8 +15,10 @@ public class Calc {
         System.out.println("Question: " + iNumber + " " + sSigns[iRandomIndex] + " " + iNumber1);
         System.out.println("Your answer: ");
         Scanner scanner = new Scanner(System.in);
-        int iAnswer = scanner.nextInt();
+        String sAnswer = scanner.next();
+        int iAnswer = Integer.parseInt (sAnswer);
         int iCorrectAnswer = Eval.eval(iNumber, sSigns[iRandomIndex], iNumber1);
+
         if (iAnswer == iCorrectAnswer) {
             System.out.println("Correct!");
             bResult = true;
