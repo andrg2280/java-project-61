@@ -1,5 +1,11 @@
 package hexlet.code;
-import hexlet.code.Games.*;
+import hexlet.code.Games.Greet;
+import hexlet.code.Games.Calc;
+import hexlet.code.Games.Nod;
+import hexlet.code.Games.Even;
+import hexlet.code.Games.Prog;
+import hexlet.code.Games.Prime;
+
 
 import java.util.Scanner;
 

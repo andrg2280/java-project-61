@@ -26,10 +26,18 @@ public class Calc {
     public static int eval(int a, String operator, int b) {
         int r = 0;
         switch (operator) {
-            case "/" -> r += a / b;
-            case "*" -> r += a * b;
-            case "-" -> r += a - b;
-            case "+" -> r += a + b;
+            case "/" -> {
+                r = a / b;
+            }
+            case "*" -> {
+                r = a * b;
+            }
+            case "-" -> {
+                r = a - b;
+            }
+            case "+" -> {
+                r = a + b;
+            }
             default -> {
             }
         }

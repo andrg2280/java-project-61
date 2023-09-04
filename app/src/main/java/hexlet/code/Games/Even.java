@@ -16,6 +16,6 @@ public class Even {
             rounds[i][0] = randomNumber + "";
             rounds[i][1] = randomNumber % 2 == 0 ? "yes" : "no";
         }
-        playRounds("Answer 'yes' if the number is calculateEvenNumber, otherwise answer 'no'.", rounds);
+        playRounds("Answer 'yes' if the number is even, otherwise answer 'no'.", rounds);
     }
 }
