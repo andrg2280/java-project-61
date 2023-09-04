@@ -1,15 +1,15 @@
-package hexlet.code;
+package hexlet.code.Games;
 
 
-import static hexlet.code.Engine.checkAnswer;
+import static hexlet.code.Engine.playRounds;
 import static hexlet.code.Utils.MAX_COLS;
 import static hexlet.code.Utils.MAX_ROWS;
 import static hexlet.code.Utils.getRandomNumber;
-import static hexlet.code.Utils.isPrime;
+import static java.lang.Math.sqrt;
 
 public class Prime {
     public static final int MAX_RANDOM_NUMBER = 100;
-    public static void prime() {
+    public static void calculatePrimeNumber() {
         int  randomNumber = 0;
         String[][] rounds = new String[MAX_ROWS][MAX_COLS];
 
@@ -22,7 +22,18 @@ public class Prime {
                 rounds[i][1] = "no";
             }
         }
-        checkAnswer("Answer 'yes' if given number is prime. Otherwise answer 'no'.", rounds);
+        playRounds("Answer 'yes' if given number is calculatePrimeNumber. Otherwise answer 'no'.", rounds);
     }
-
+    public static boolean isPrime(int iInput) {
+        if (iInput < 2) {
+            return false;
+        }
+        double d = sqrt(iInput);
+        for (int i = 2; i <= d; i++) {
+            if (iInput % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

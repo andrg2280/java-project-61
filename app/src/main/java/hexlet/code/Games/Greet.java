@@ -1,10 +1,10 @@
-package hexlet.code;
+package hexlet.code.Games;
 
-import static hexlet.code.Engine.checkAnswer;
+import static hexlet.code.Engine.playRounds;
 
 public class Greet {
     public static void greet() {
         String[][] dummy = new String[0][];
-        checkAnswer("", dummy);
+        playRounds("", dummy);
     }
 }

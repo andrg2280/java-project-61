@@ -1,4 +1,6 @@
 package hexlet.code;
+import hexlet.code.Games.*;
+
 import java.util.Scanner;
 
 public class App {
@@ -15,26 +17,12 @@ public class App {
         String gameSelected = scanner.next();
         System.out.println("Your choice is: " + gameSelected);
         switch (gameSelected) {
-            case "0" -> {
-            }
-            case "1" -> {
-                Greet.greet();
-            }
-            case "2" -> {
-                Even.even();
-            }
-            case "3" -> {
-                Calc.calc();
-            }
-            case "4" -> {
-                Nod.nod();
-            }
-            case "5" -> {
-                Prog.prog();
-            }
-            case "6" -> {
-                Prime.prime();
-            }
+            case "1" -> Greet.greet();
+            case "2" -> Even.calculateEvenNumber();
+            case "3" -> Calc.calculateExpression();
+            case "4" -> Nod.calculateGCD();
+            case "5" -> Prog.calculateMissingDigit();
+            case "6" -> Prime.calculatePrimeNumber();
             default -> {
             }
         }
