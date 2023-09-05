@@ -22,7 +22,7 @@ public class Prime {
                 rounds[i][1] = "no";
             }
         }
-        playRounds("Answer 'yes' if given number is calculatePrimeNumber. Otherwise answer 'no'.", rounds);
+        playRounds("Answer 'yes' if given number is prime. Otherwise answer 'no'.", rounds);
     }
     public static boolean isPrime(int iInput) {
         if (iInput < 2) {
