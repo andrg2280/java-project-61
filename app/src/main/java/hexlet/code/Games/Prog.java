@@ -10,7 +10,6 @@ public class Prog {
     public static final int PROGRESSION_LENGTH = 11;
     public static final int MIN_RANDOM_NUMBER = 9;
     public static final int MAX_RANDOM_NUMBER = 10;
-    static int voidNumber = 0;
     public static void calculateMissingDigit() {
         String[][] rounds = new String[MAX_ROWS][MAX_COLS];
         for (int i = 0; i < rounds.length; i++) {
