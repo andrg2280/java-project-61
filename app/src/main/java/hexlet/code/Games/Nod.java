@@ -11,8 +11,8 @@ public class Nod {
         String[][] rounds = new String[MAX_ROWS][MAX_COLS];
 
         for (int i = 0; i < rounds.length; i++) {
-            int randomNumber1 = Utils.getRandomNumber(0, MAX_RANDOM_NUMBER);
-            int randomNumber2 = Utils.getRandomNumber(0, MAX_RANDOM_NUMBER);
+            int randomNumber1 = Utils.getRandomNumber(1, MAX_RANDOM_NUMBER);
+            int randomNumber2 = Utils.getRandomNumber(1, MAX_RANDOM_NUMBER);
             rounds[i][0] = Integer.toString(randomNumber1) + " " + Integer.toString(randomNumber2);
             rounds[i][1] = gcdBF(randomNumber1, randomNumber2) + "";
         }
