@@ -1,7 +1,7 @@
 package hexlet.code.Games;
 
-import static hexlet.code.Engine.playRounds;
-import static hexlet.code.Utils.getRandomNumber;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
 import static hexlet.code.Utils.MAX_COLS;
 import static hexlet.code.Utils.MAX_ROWS;
 
@@ -12,10 +12,10 @@ public class Even {
         String[][] rounds = new String[MAX_ROWS][MAX_COLS];
 
         for (int i = 0; i < rounds.length; i++) {
-            int randomNumber = getRandomNumber(0, MAX_RANDOM_NUMBER);
-            rounds[i][0] = randomNumber + "";
+            int randomNumber = Utils.getRandomNumber(0, MAX_RANDOM_NUMBER);
+            rounds[i][0] = Integer.toString(randomNumber);
             rounds[i][1] = randomNumber % 2 == 0 ? "yes" : "no";
         }
-        playRounds("Answer 'yes' if the number is even, otherwise answer 'no'.", rounds);
+        Engine.playRounds("Answer 'yes' if the number is even, otherwise answer 'no'.", rounds);
     }
 }

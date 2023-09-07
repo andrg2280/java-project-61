@@ -23,10 +23,11 @@ public class Engine {
                 System.out.println("Let's try again, " + userName + "!");
                 scanner.close();
                 return;
-            } else {
-                System.out.println("Correct!");
             }
+            System.out.println("Correct!");
         }
-        System.out.println("Congratulations, " + userName + "!");
+        if (rounds.length > 0) {
+            System.out.println("Congratulations, " + userName + "!");
+        }
     }
 }
